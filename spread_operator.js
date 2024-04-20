@@ -53,13 +53,7 @@ console.log(updateUser1);
 //spread operator in function argument
 
 function add(a, ...rest) {
-  var sum = 0;
-  sum += a;
-
-  for (let i = 0; i < rest.length; i++) {
-    sum += i;
-  }
-  return sum;
+  return rest.reduce((total, num) => total + num, a);
 }
 
 console.log('sum ', add(1, 2, 3, 4, 5, 6));
