@@ -41,7 +41,7 @@ const {
 } = obj;
 console.log(middle);
 
-//destructuring array
+//destructuring in array
 const date = ['2021', '01', '01'];
 //normal way
 const years = date[0];
@@ -53,3 +53,6 @@ console.log('year,month,day', year, month, day);
 //taking only necessary data
 const [yr, , dy] = date;
 console.log('yr,dy: ', yr, dy);
+
+//can pass default arg as
+// const [year, month, day, weekday='sunday'] = date;
